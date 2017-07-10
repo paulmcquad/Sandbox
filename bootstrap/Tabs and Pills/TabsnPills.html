@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--nav nav-tabs -->
+ <div class="container">
+  <h2>Tabs</h2>
+  <p>The .nav-tabs class is used to create navigation tabs:</p>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</div>
+
+<!--nav nav-pills -->
+<div class="container">
+  <h2>Tabs</h2>
+  <p>The .nav-pills class is used to create navigation pills:</p>
+  <ul class="nav nav-pills" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</div>
+
+<!-- nav nav-pills nav-stacked -->
+<div class="container">
+  <h2>Tabs</h2>
+  <p>The .nav-stacked class is used to create vertical navigation pills:</p>
+  <ul class="nav nav-pills nav-stacked" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</div>
+
+<!--nav nav-tabs nav-justified -->
+<!--nav nav-pills nav-justified -->
+<div class="container">
+  <h2>Justified Tabs/Pills</h2>
+  <p>The .nav-justified class makes navigation tabs/pills equal widths of their parent at screens wider than 768px. On smaller screens, the nav tabs/pills are stacked:</p>
+
+  <h3>Tabs:</h3>
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+
+  <h3>Pills:</h3>
+  <ul class="nav nav-pills nav-justified" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</div>
+
+<!--nav nav-tabs (disabled)  -->
+<!--nav nav-pills (disabled)  -->
+
+<div class="container">
+  <h2>Disabled Tab/Pill</h2>
+  <p>The .disabled class is used to disable a tab or pill:</p>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">HTML</a></li>
+    <li class="disabled"><a href="#">CSS</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+  <br>
+  <ul class="nav nav-pills" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">HTML</a></li>
+    <li class="disabled"><a href="#">CSS</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</div>
+
+
+
+<!--nav nav-tabs with dropdown-menu -->
+<div class="container">
+  <h2>Tab with Dropdown Menu</h2>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+
+    <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Tutorials <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!--nav nav-pills with dropdown-menu -->
+<div class="container">
+  <h2>Pill with Dropdown Menu</h2>
+  <ul class="nav nav-pills" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Tutorials <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+<!--nav nav-tabs with tab-content -->
+<div class="container">
+  <h2>Dynamic Tabs</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
